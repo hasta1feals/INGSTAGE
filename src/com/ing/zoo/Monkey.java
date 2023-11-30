@@ -1,29 +1,32 @@
 package com.ing.zoo;
 
-public class Lion extends Carnivore {
-    public String name;
-    public String trick;
-    public String eatText;
+public class Monkey extends Herbivore {
 
-    public Lion(String name)
+    public String eatText;
+    public String trick;
+
+    public Monkey(String name)
     {
-        super(name, "roar");
+        super(name, "ook ook");
     }
 
+
+
+
     @Override
-    public void eatMeat()
+    public void eatLeaves()
     {
         eatText = "nomnomnom thx mate";
         System.out.println(eatText);
     }
 
-
     @Override
     public void performTrick() {
-        trick = "DOES A SALTO";
+        trick = "do a handstand";
         System.out.println(trick);
+
     }
 
 
-
 }
+

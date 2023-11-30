@@ -2,34 +2,23 @@ package com.ing.zoo;
 
 import java.util.Random;
 
-public class Pig {
+public class Pig extends Herbivore {
     public String name;
-    public String helloText;
     public String eatText;
     public String trick;
 
-    public Pig()
+    public Pig( String name)
     {
+        super(name, "oink oink");
     }
-
-    public void sayHello()
-    {
-        helloText = "splash";
-        System.out.println(helloText);
-    }
-
+    @Override
     public void eatLeaves()
     {
         eatText = "munch munch oink";
         System.out.println(eatText);
     }
 
-    public void eatMeat()
-    {
-        eatText = "nomnomnom oink thx";
-        System.out.println(eatText);
-    }
-
+    @Override
     public void performTrick()
     {
         Random random = new Random();
